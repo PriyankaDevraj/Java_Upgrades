@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h2>
+		<b><i>Enhancements in Java Language in Java SE 8</i></b>
+	</h2>
+	<p>
+	<ul>
+		<li><strong>Lambda Expression(Not in SE7)</strong> – These are
+			expression which encapsulates a functionality which can be executed
+			instantly or passed on to other code.It enables us to treat
+			functionality as method argument, or code as data. <a
+			href="code/MyLambda.java">Example 1, </a> <a
+			href="code/TypeInferenceExample.java">Example 2</a></li>
+		<br>
+
+		<li><strong>Method Reference(Not in SE7)</strong> - When a lambda
+			expression invokes an existing method, we can use a method reference
+			instead of lambda expression, as shown in example 2. <a
+			href="code/MethodReferenceLambda.java">Example 2</a></li>
+		<br>
+
+		<li><strong>Default Methods(Not in SE7)</strong> - Default
+			methods are methods defined in an interface with "default" keyword.
+			These methods have default implementation in the interface.These
+			methods are useful when we want to add a new functionality to an
+			interface without impacting already written code.<a
+			href="code/DefaultMethodInterface.java">DefaultMethodInterface, </a>
+			<a href="code/DefaultMethodExample.java">DefaultMethodExample</a></li>
+		<br>
+
+		<li><strong>Repeating Annotations(Not in SE7)</strong> - It
+			provides the ability the same annotation type more than once to the
+			same declaration or type use.<a href="code/AnnotationExample.java">AnnotationExample</a></li>
+		<br>
+		<li><strong>Type Annotations(Not in SE7)</strong> - Annotations
+			can be applied to any type use such as instance creation expression.
+			In jave SE7 it could be applied only to declarations. <a
+			href="code/AnnotationExample.java">AnnotationExample</a></li>
+		<br>
+
+		<li><strong>Improved Type Inference</strong> - In Java SE 8 the
+			type inference has been improved.This is illustrated in the example.
+			<a href="code/TypeInferenceExample.java">TypeInferenceExample</a></li>
+		<br>
+
+		<li><strong>Method parameter reflection</strong> -A new feature
+			is provided in SE 8,in which one can get the names of formal
+			parameters of any method or constructor. The java.lang.reflect
+			package contains all the required classes like Method and Parameter
+			to work with parameter reflection. <a href="code/Calculate.java">Calculate</a>
+			<a href="code/ParameterReflection.java">ParameterReflection</a></li>
+		<br>
+
+		<li><strong>For each loop</strong> - Java provides a new method
+			forEach() to iterate the elements. It is defined in Iterable and
+			Stream interface. <a href="code/ForEachExample.java">ForEachExample</a></li>
+		<br>
+
+		<li><strong>java.util.stream package</strong> - Java provides a
+			new additional package in Java 8 called java.util.stream. This
+			package consists of classes, interfaces and enum to allows
+			functional-style operations on the elements.One can use stream to
+			filter, collect, print, and convert from one data structure to other.
+			<a href="code/StreamExample.java">StreamExample</a> <a
+			href="code/Person.java">Person</a> <a
+			href="code/BulkDataOperationsExample.java">BulkDataOperationsExample</a></li>
+		<br>
+		<li><strong>Optional Class</strong> - Java introduced a new class
+			Optional in jdk8. It is a public final class and used to deal with
+			NullPointerException in Java application. <a
+			href="code/OptionalDemo.java">OptionalDemo</a></li>
+		<br>
+
+	</ul>
+	</p>
+	<h2>
+		<b><i>Enhancements in Java language in Java SE 9</i></b>
+	</h2>
+	<p>
+	<ul>
+		<li><strong>Private Interface Methods</strong> – In Java 9, we
+			can create private methods inside an interface. Interface allows us
+			to declare private methods that help to share common code between
+			non-abstract methods. <a href="code/PrivateInterfaceExample.java">PrivateInterfaceExample,
+		</a> <a href="code/Sayable.java">Sayable</a></li>
+		<br>
+		<li><strong>Try with resources</strong> – In java 7 try with
+			resources was introduced in which one or more resources can be
+			declared in the try statement as shown in
+			FinalVariable.java.Try-with-resource is improved in Java 9 and now we
+			can use reference of the resource that is not declared locally as
+			shown in FinalVariable1.java. <a href="code/FinalVariable.java">FinalVariable
+				, </a> <a href="code/FinalVariable1.java">FinalVariable1</a></li>
+		<br>
+
+		<li><strong>Anonymous Inner Classes Improvement</strong> – In
+			Java 9 diamond operator can be used with inner classes. This feature
+			was not present in previous versions. <a
+			href="code/AnonymousClassExample.java">AnonymousClassExample </a></li>
+		<br>
+
+		<li><strong>@SafeVarargs Annotation improvement</strong> –
+			@SafeVarargs were included in Java 7 and could be applied on final
+			methods ,static methods and constructors.These annotations are used
+			to ensure that safe operations are performed on varargs. In version 9
+			it is improved to be applied on private instance methods. <a
+			href="code/SafeVar.java">SafeVar</a></li>
+		<br>
+
+		<li><strong>Factory Methods</strong> – Java 9 Collection library
+			includes static factory methods for List, Set and Map interface.
+			These methods are useful to create small number of collection.They
+			create unmodifiable i.e. immutable instances of collection. It is
+			unmodifiable, so adding new element will throw
+			java.lang.UnsupportedOperationException. <a
+			href="code/FactoryMethodsExample.java">FactoryMethodsExample</a></li>
+		<br>
+
+		<li><strong> Process API Improvement</strong> –Java has improved
+			its process API in Java 9 version that helps to manage and control
+			operating system processes.In earlier versions, it was complex to
+			manage and control operating system processes by using Java
+			programming. Now, new classes and interfaces are added to perform
+			this task. <a href="code/ProcessApiExample.java">ProcessApiExample</a></li>
+		<br>
+
+		<li><strong>Underscore Keyword</strong> - '_' should not be used
+			as an identifier, since it is a reserved keyword from source level
+			1.8 on.<a href="code/UnderScoreExample.java">UnderScoreExample</a></li>
+		<br>
+
+		<li><strong>Version-String Scheme</strong> - In Java 9, a new
+			version-string scheme is introduced that looks like -
+			$MAJOR.$MINOR.$SECURITY.$PATCH .In Java 9, a Runtime.Version class is
+			added to get Java version information. <a
+			href="code/VersionInfoExample.java">VersionInfoExample</a></li>
+		<br>
+
+		<li><strong>Java Shell Tool (JShell)</strong> - It is an
+			interactive Java Shell tool, it allows us to execute Java code from
+			the shell and shows output immediately. JShell is a REPL (Read
+			Evaluate Print Loop) tool and run from the command line.<a
+			href="code/Jshell.jpg">Jshell Snapshot</a></li>
+		<br>
+
+		<li><strong>Java 9 Module System</strong> - Java Module System is
+			a major change in Java 9 version. Java added this feature to collect
+			Java packages and code into a single unit called module.o describe a
+			module, a Java file module-info.java is required.</li>
+		<br>
+
+	</ul>
+	</p>
+	<h2>
+		<b><i>Enhancements in Java language in Java SE 10</i></b>
+	</h2>
+	<p>
+	<ul>
+		<li><strong>APIs for Creating Unmodifiable Collections </strong>
+			- Several new APIs have been added that facilitate the creation of
+			unmodifiable collections.For example -
+			List.copyOf,toUnmodifiableList.<a
+			href="code/UnmodifiableCollectionApi.java">UnmodifiableCollectionApi</a></li>
+		<br>
+		<li><strong>Optional.orElseThrow() Method </strong> - A new
+			method orElseThrow has been added to the Optional class. It is
+			synonymous with and is now the preferred alternative to the existing
+			get method.</li><a
+			href="code/OptionalThrowDemo.java">OptionalThrowDemo</a></li>
+		<br>
+	</ul>
+	</p>
+	<h2>
+		<b><i>Enhancements in Java language in Java SE 11</i></b>
+	</h2>
+	<p>
+	<ul>
+		<li><strong>New Collection.toArray(IntFunction) Default
+				Method </strong> - A new default method toArray(IntFunction) has been added
+			to the java.util.Collection interface. This method allows the
+			collection's elements to be transferred to a newly created array of a
+			desired runtime type.<a
+			href="code/NewToArrayDemo.java">NewToArrayDemo</a></li>
+		<br>
+		<li><strong>Local-Variable Syntax for Lambda Parameters
+		</strong> -The reserved type name var can now be used when declaring the formal
+			parameters of a lambda expression.If var is used for any formal
+			parameter of a lambda expression, then it must be used for all formal
+			parameters of that lambda expression.</li>
+		<br>
+	</ul>
+	</p>
+</body>
+</html>
